@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latte</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="./favicon.ico">
 </head>
@@ -72,22 +72,24 @@
         </div>
     </section>
 
-    <section class="novedades">
+<section class="novedades"> <!--CARDS CON NOVEDADES-->
+    <section class="row">
+    
         <h2>Novedades</h2>
 
-        <div>
+        <div class="col-sm-12">
             <img src="./assets/imagenes/novedad_puerto_madero.jpg" alt="clientes tomando un café y charlando">
             <h4>Inauguración Puerto Madero</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus neque nulla impedit sequi eligendi, iusto ducimus, fuga officia delectus tenetur voluptate a explicabo. Illum beatae et dignissimos aspernatur ad?</p>
         </div>
 
-        <div>
+        <div class="col-sm-12">
             <img src="./assets/imagenes/latte_art.jpg" alt="barista haciendo latte art">
             <h4>Cursos de Latte Art</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus neque nulla impedit sequi eligendi, iusto ducimus, fuga officia delectus tenetur voluptate a explicabo. Illum beatae et dignissimos aspernatur ad?</p>
         </div>  
 
-        <div>
+        <div class="col-sm-12">
             <img src="./assets/imagenes/staff_stairs.jpg" alt="staff sentados en la escalera">
             <h4>Sumate a nuestro equipo</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus neque nulla impedit sequi eligendi, iusto ducimus, fuga officia delectus tenetur voluptate a explicabo. Illum beatae et dignissimos aspernatur ad?</p>
@@ -98,45 +100,48 @@
 
     <!--PIE DE PÁGINA-->
 
-    <footer class="pieDePaginaCard"> 
-        <div>
-            <h4>CONTACTO</h4>
-            <p>Mail latte@gmail.com</p>
-            <p>Tel. 4303 1204</p>
-            <p>Whatsapp +011 15 285 549 51</p>
-        </div>
+    <footer> 
+        <section class="container colorPieDePagina">
+            <section class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h4>CONTACTO</h4>
+                    <p>Mail latte@gmail.com</p>
+                    <p>Tel. 4303 1204</p>
+                    <p>Whatsapp +011 15 285 549 51</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <h4>ENCONTRANOS</h4>
+                    <p>Palermo: Costa Rica 6000</p>
+                    <p>Belgrano: Echeverría 3240</p>
+                    <p>Recoleta: Av. del Libertador 1473</p>
+                    <p>Puerto Madero: Macacha Güemes 322</p>
+                </div>
         
-        <div>
-            <h4>ENCONTRANOS</h4>
-            <p>Palermo: Costa Rica 6000</p>
-            <p>Belgrano: Echeverría 3240</p>
-            <p>Recoleta: Av. del Libertador 1473</p>
-            <p>Puerto Madero: Macacha Güemes 322</p>
-        </div>
-
-        <div>
-            <h4>SEGUINOS EN</h4>
-            <img class="logo_footer" src="./assets/imagenes/instagram.png" alt="logo instagram">
-            <img class="logo_footer" src="./assets/imagenes/facebook.png" alt="logo facebook">
-        </div>
-
-        <div>
-            <h4>NUESTRO NEWSLETTER</h4>
-            <p>Para suscribirte a nuestreo newsletter mensual con las últimas novedades, dejanos tu mail y nos pondremos en contacto.</p>
-            <form action=""> <!--FORMULARIO-->
-                <input type="email" placeholder="Mail" required>
-                <input type="submit" value="SUSCRIBITE">
-            </form>
-
-        </div>
-
-        <div>
-            <p>@LATTE2022</p>
-        </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4>SEGUINOS EN</h4>
+                    <img class="logo_footer w-25" src="./assets/imagenes/instagram.png" alt="logo instagram">
+                    <img class="logo_footer w-25" src="./assets/imagenes/facebook.png" alt="logo facebook">
+                </div>
         
+                <div class="col-lg-4 col-md-6">
+                    <h4>NUESTRO NEWSLETTER</h4>
+                    <p>Para suscribirte a nuestreo newsletter mensual con las últimas novedades, dejanos tu mail y nos pondremos en contacto.</p>
+                    <form action=""> <!--FORMULARIO-->
+                        <input type="email" placeholder="Mail" required>
+                        <input type="submit" value="SUSCRIBITE">
+                    </form>
+        
+                </div>
+            </section>
+            
+            <div class="row">
+                <p>@LATTE2022</p>
+            </div>
+        </section>        
     </footer>
 
     <!--JAVA SCRIPT DE BOOTSTRAP-->
-    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
