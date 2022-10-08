@@ -33,16 +33,42 @@
 
     <main class="novedades">
         <h1>Nuestros locales</h1>
-        <ul class="lista_navegacion2">
-            <li>Palermo</li>
-            <li>Belgrano</li>
-            <li>Recoleta</li>
-            <li>Puerto Madero</li>
-        </ul>
+        <section class="novedades row">
 
-        <section>
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1FJwq0tok_v894yj80-_XaeGpGhmIUUQ&ehbc=2E312F" width="640" height="480"></iframe>    
+            <div class="col-lg-3">
+                <img class="w-100" src="../assets/imagenes/local_1.JPG" alt="local Palermo">
+                <h4>Palermo</h4>
+                <p>Costa Rica 6000</p>
+            </div>
+    
+            <div class="col-lg-3">
+                <img class="w-100" src="../assets/imagenes/local_2.JPG" alt="local Belgrano">
+                <h4>Belgrano</h4>
+                <p>Echeverría 3240</p>
+            </div>
+    
+            <div class="col-lg-3">
+                <img class="w-100" src="../assets/imagenes/local_3.JPG" alt="local Recoleta">
+                <h4>Recoleta</h4>
+                <p>Av. del Libertador 1473</p>
+            </div>
+    
+            <div class="col-lg-3">
+                <img class="w-100" src="../assets/imagenes/local_4.JPG" alt="local Puerto Madero">
+                <h4>Puerto Madero</h4>
+                <p>Macacha Güemes 322</p>
+            </div>
+    
+        
         </section>
+        <!--
+        <ul class="lista_navegacion2">
+            <button type="button" class="btn btn-light">Palermo</button>
+            <button type="button" class="btn btn-light">Belgrano</button>
+            <button type="button" class="btn btn-light">Recoleta</button>
+            <button type="button" class="btn btn-light">Puerto Madero</button>
+        </ul>
+        -->
         <!--
         <section>
             <h2>Palermo</h2>
@@ -67,96 +93,70 @@
     </main>
 
     <section class="certificados">
-        <div class="card"> 
+        <div> 
             <h2>Horarios de atención</h2>
-            <p>Lun-Vie 9:00 hs - 22:00 hs</p>
-            <p>Sáb-Dom 10:00 hs - 19:00 hs</p>
+            <p class="row w-100 pb-0">Lun-Vie 9:00 hs - 22:00 hs</p>
+            <p class="row pt-0">Sáb-Dom 10:00 hs - 19:00 hs</p>
         </div>
     </section>
 
     <section>
-        <h3>Encontrá la sucursal más cercana</h3> 
-        <form action=""> 
-            <div>
-                <label>Barrio</label>
-                <select name="" id="">
-                    <option value="P">Palermo</option>
-                    <option value="B">Belgrano</option>
-                    <option value="R">Recoleta</option>
-                    <option value="P">Puerto Madero</option>
-                </select>
-            </div>
-        </form>
-    </section>
-
-    <section class="novedades">
-
-        <div>
-            <img src="../assets/imagenes/local_1.JPG" alt="local Palermo">
-            <h4>Palermo</h4>
-            <p>Costa Rica 6000</p>
+        <div class="margenes">
+            <h3 class="pt-4 pb-2">Encontrá la sucursal más cercana</h3> 
+            <form action=""> 
+                <div>
+                    <label>Barrio</label>
+                    <select name="" id="">
+                        <option value="P">Palermo</option>
+                        <option value="B">Belgrano</option>
+                        <option value="R">Recoleta</option>
+                        <option value="P">Puerto Madero</option>
+                    </select>
+                </div>
+            </form>
         </div>
 
-        <div>
-            <img src="../assets/imagenes/local_2.JPG" alt="local Belgrano">
-            <h4>Belgrano</h4>
-            <p>Echeverría 3240</p>
-        </div>
+        <section>
+            <iframe class="w-100" src="https://www.google.com/maps/d/u/0/embed?mid=1FJwq0tok_v894yj80-_XaeGpGhmIUUQ&ehbc=2E312F" width="640" height="480"></iframe>    
+        </section>
 
-        <div>
-            <img src="../assets/imagenes/local_3.JPG" alt="local Recoleta">
-            <h4>Recoleta</h4>
-            <p>Av. del Libertador 1473</p>
-        </div>
-
-        <div>
-            <img src="../assets/imagenes/local_4.JPG" alt="local Puerto Madero">
-            <h4>Puerto Madero</h4>
-            <p>Macacha Güemes 322</p>
-        </div>
-
-    
     </section>
 
     <!--PIE DE PÁGINA-->
 
     <footer> 
-        <section class="container colorPieDePagina">
+        <section class="container-fluid pt-4 mt-5 colorPieDePagina">
             <section class="row">
-                <div class="col-lg-4 col-md-6">
-                    <h4>CONTACTO</h4>
-                    <p>Mail latte@gmail.com</p>
-                    <p>Tel. 4303 1204</p>
-                    <p>Whatsapp +011 15 285 549 51</p>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <h4>ENCONTRANOS</h4>
-                    <p>Palermo: Costa Rica 6000</p>
-                    <p>Belgrano: Echeverría 3240</p>
-                    <p>Recoleta: Av. del Libertador 1473</p>
-                    <p>Puerto Madero: Macacha Güemes 322</p>
-                </div>
-        
-                <div class="col-lg-4 col-md-6">
-                    <h4>SEGUINOS EN</h4>
-                    <img class="logo_footer w-25" src="../assets/imagenes/instagram.png" alt="logo instagram">
-                    <img class="logo_footer w-25" src="../assets/imagenes/facebook.png" alt="logo facebook">
-                </div>
-        
-                <div class="col-lg-4 col-md-6">
-                    <h4>NUESTRO NEWSLETTER</h4>
+                <div class="col-lg-4">
+                    <h5>NUESTRO NEWSLETTER</h5>
                     <p>Para suscribirte a nuestreo newsletter mensual con las últimas novedades, dejanos tu mail y nos pondremos en contacto.</p>
                     <form action=""> <!--FORMULARIO-->
                         <input type="email" placeholder="Mail" required>
                         <input type="submit" value="SUSCRIBITE">
                     </form>
-        
                 </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <h5>ENCONTRANOS</h5>
+                    <p>Palermo: Costa Rica 6000</p>
+                    <p>Belgrano: Echeverría 3240</p>
+                    <p>Recoleta: Av. del Libertador 1473</p>
+                    <p>Puerto Madero: Macacha Güemes 322</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5>CONTACTO</h5>
+                    <p>Mail latte@gmail.com</p>
+                    <p>Tel. 4303 1204</p>
+                    <p>Whatsapp +011 15 285 549 51</p>
+                    <img class="logo_footer" src="../assets/imagenes/instagram.png" alt="logo instagram">
+                    <img class="logo_footer" src="../assets/imagenes/facebook.png" alt="logo facebook">
+                </div>
+        
             </section>
             
-            <div class="row">
-                <p>@LATTE2022</p>
+            <div class="row text-center">
+                <p class="mt-3">@LATTE2022</p>
             </div>
         </section>        
     </footer>

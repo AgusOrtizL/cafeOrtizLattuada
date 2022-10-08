@@ -32,40 +32,27 @@
     <!--MAIN-->
         <main class="novedades">
             <h1>Productos</h1>
+
             <section class="container">
-                <div class="card-group">
-                    <div class="card">
-                      <img src="../assets/imagenes/flat_white_bolsa.png" class="card-img-top" alt="bolsa de granos flat white">
-                      <div class="card-body">
-                        <h5 class="card-title">Granos flat white</h5>
-                        <p class="card-text">Parrafo de la tarjeta</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"><a href="">Mas Info</a></small>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="../assets/imagenes/latte_bolsa.png" class="card-img-top" alt="bolsa de granos latte">
-                      <div class="card-body">
-                        <h5 class="card-title">Granos latte</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="../assets/imagenes/mocha_bolsa.png" class="card-img-top" alt="bolsa de granos mocha latte">
-                      <div class="card-body">
-                        <h5 class="card-title">Granos mocha</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                      </div>
-                    </div>
-                  </div>
-        
+              <div class="row pt-3">
+                <div class="col-lg-4">
+                  <img src="../assets/imagenes/flat_white_bolsa.png" class="card-img-top" alt="bolsa de granos flat white">
+                  <h5>Granos flat white</h5>
+                  <p>Parrafo de la tarjeta</p>
+                </div>
+
+                <div class="col-lg-4">
+                  <img src="../assets/imagenes/latte_bolsa.png" class="card-img-top" alt="bolsa de granos latte">
+                  <h5>Granos latte</h5>
+                  <p>Parrafo de la tarjeta</p>
+                </div>
+
+                <div class="col-lg-4">
+                  <img src="../assets/imagenes/mocha_bolsa.png" class="card-img-top" alt="bolsa de granos mocha latte">
+                  <h5>Granos mocha</h5>
+                  <p>Parrafo de la tarjeta</p>
+                </div>
+              </div>
             </section>
         </main>
 
@@ -73,45 +60,41 @@
     <!--PIE DE PÁGINA-->
 
     <footer> 
-        <section class="container colorPieDePagina">
-            <section class="row">
-                <div class="col-lg-4 col-md-6">
-                    <h4>CONTACTO</h4>
-                    <p>Mail latte@gmail.com</p>
-                    <p>Tel. 4303 1204</p>
-                    <p>Whatsapp +011 15 285 549 51</p>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <h4>ENCONTRANOS</h4>
-                    <p>Palermo: Costa Rica 6000</p>
-                    <p>Belgrano: Echeverría 3240</p>
-                    <p>Recoleta: Av. del Libertador 1473</p>
-                    <p>Puerto Madero: Macacha Güemes 322</p>
-                </div>
-        
-                <div class="col-lg-4 col-md-6">
-                    <h4>SEGUINOS EN</h4>
-                    <img class="logo_footer w-25" src="../assets/imagenes/instagram.png" alt="logo instagram">
-                    <img class="logo_footer w-25" src="../assets/imagenes/facebook.png" alt="logo facebook">
-                </div>
-        
-                <div class="col-lg-4 col-md-6">
-                    <h4>NUESTRO NEWSLETTER</h4>
-                    <p>Para suscribirte a nuestreo newsletter mensual con las últimas novedades, dejanos tu mail y nos pondremos en contacto.</p>
-                    <form action=""> <!--FORMULARIO-->
-                        <input type="email" placeholder="Mail" required>
-                        <input type="submit" value="SUSCRIBITE">
-                    </form>
-        
-                </div>
-            </section>
-            
-            <div class="row">
-                <p>@LATTE2022</p>
-            </div>
-        </section>        
-    </footer>
+      <section class="container-fluid pt-4 colorPieDePagina">
+          <section class="row">
+              <div class="col-lg-4">
+                  <h5>NUESTRO NEWSLETTER</h5>
+                  <p>Para suscribirte a nuestreo newsletter mensual con las últimas novedades, dejanos tu mail y nos pondremos en contacto.</p>
+                  <form action=""> <!--FORMULARIO-->
+                      <input type="email" placeholder="Mail" required>
+                      <input type="submit" value="SUSCRIBITE">
+                  </form>
+              </div>
+              
+              <div class="col-lg-4 col-md-6">
+                  <h5>ENCONTRANOS</h5>
+                  <p>Palermo: Costa Rica 6000</p>
+                  <p>Belgrano: Echeverría 3240</p>
+                  <p>Recoleta: Av. del Libertador 1473</p>
+                  <p>Puerto Madero: Macacha Güemes 322</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                  <h5>CONTACTO</h5>
+                  <p>Mail latte@gmail.com</p>
+                  <p>Tel. 4303 1204</p>
+                  <p>Whatsapp +011 15 285 549 51</p>
+                  <img class="logo_footer" src="../assets/imagenes/instagram.png" alt="logo instagram">
+                  <img class="logo_footer" src="../assets/imagenes/facebook.png" alt="logo facebook">
+              </div>
+      
+          </section>
+          
+          <div class="row text-center">
+              <p class="mt-3">@LATTE2022</p>
+          </div>
+      </section>        
+  </footer>
 
     <!--JAVA SCRIPT DE BOOTSTRAP-->
     <script src="../js/bootstrap.bundle.min.js"></script>    
