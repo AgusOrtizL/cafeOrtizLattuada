@@ -1,168 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-}
+body {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden; }
 
-body{
-    background-color: #ffffff;
-    width: 100vw; 
-    height: 100vh;
-    overflow-x: hidden; 
-}
-
-/*ENCABEZADO*/
-
-.encabezado{
-    position: fixed;
-    width: 100% ;
-    background-color: #ffffff;
-    opacity: 92% ;
-}
-
-.logoPrincipal{
-    width: 9%;
-}
-
-.logo_whatsapp{
-    width: 3%;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-}
-
-.lista_navegacion{
+.encabezado {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 92%; }
+  .encabezado .logoPrincipal {
+    width: 9%; }
+  .encabezado .lista_navegacion {
     list-style-type: none;
     text-align: right;
-    margin: 10px;
-}
+    margin: 10px; }
+    .encabezado .lista_navegacion li {
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem; }
+      .encabezado .lista_navegacion li a {
+        text-decoration: none;
+        color: #000;
+        margin: 10px;
+        padding: 10px; }
 
-.lista_navegacion li{
-    text-decoration: none;
+.cuerpo {
+  padding-top: 30px; }
+  .cuerpo .imgPrincipal {
+    height: 120vh;
+    width: 100vw; }
+  .cuerpo .imgFachada {
+    height: 75vh; }
+
+.certificados {
+  text-align: center;
+  border: 1px solid #e6f7fa;
+  background-color: #e6f7fa;
+  padding: 10px; }
+  .certificados div p {
     display: inline-block;
-    font-size: 1rem;
-}
-
-.lista_navegacion li a{
-    text-decoration: none;
-    color: #000;
     margin: 10px;
-    padding: 10px;
-}
+    padding: 10px; }
+  .certificados div img {
+    width: 5%; }
+  .certificados .pagos {
+    text-align: center; }
 
-.certificados{
-    text-align: center;
-    border: 1px solid #e6f7fa;
-    background-color: #e6f7fa;
-    padding: 10px;
-}
+.logo_whatsapp {
+  width: 3%;
+  position: fixed;
+  bottom: 30px;
+  right: 20px; }
 
-.certificados div p{
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-}
+.margenes {
+  margin-left: 30px;
+  margin-bottom: 20px; }
 
-.certificados div img{
-   width: 5%;
-}
-
-/*MAIN*/
-
-.cuerpo{
-    padding-top: 30px;
-}
-
-.imgPrincipal{
-    height: 120vh; 
-    width: 100vw;
-}
-
-.card{
-    width: 27%;
-    height: 15vh;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-
-    padding-top:2%;
-    padding-bottom:2%;
-    padding-left: 1%;
-    padding-right:1%;
-
-    border-top:solid 5px rgb(46, 45, 45);	
-    border-right:solid 10px rgb(104, 105, 105);
-    border-bottom:solid 7px rgb(29, 29, 29);
-    border-left:solid 12px rgb(150, 150, 149);
-
-    border: none ;
-}
-
-.margenes{
-    margin-left: 30px;
-    margin-bottom: 20px;
-}
-
-.imgFachada{
-    height: 75vh;
-}
-
-.pagos{
-    text-align: center;
-}
-
-.novedades{
-    padding: 50px;
-    text-align: center;
-}
-/*
-.novedades div{
+.novedades_index {
+  padding: 50px;
+  text-align: center; }
+  .novedades_index div {
     display: inline-block;
     width: 25vw;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding: 20px;
-}
-*/
-.novedades section div img{
-    width: 90%;
-}
+    padding: 20px; }
+    .novedades_index div h4 {
+      padding: 10px; }
+    .novedades_index div img {
+      width: 90%; }
 
-.novedades div h4{
-    padding: 10px;
-}
+.novedades_cafes {
+  padding: 50px;
+  text-align: center; }
+  .novedades_cafes h1 {
+    padding-top: 9%; }
+  .novedades_cafes div {
+    width: 25vw;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; }
+    .novedades_cafes div h4 {
+      padding: 10px; }
+    .novedades_cafes div img {
+      width: 90%; }
 
-/*Cafés*/
-.novedades h1{
-    padding-top: 9%;
-}
+.novedades_encontranos {
+  padding: 50px;
+  text-align: center; }
+  .novedades_encontranos h1 {
+    padding-top: 9%; }
+  .novedades_encontranos div {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; }
+    .novedades_encontranos div h4 {
+      padding: 10px; }
 
-/*Encontranos*/
-.lista_navegacion2{
-    list-style-type: none;
-    text-align: center;
-    margin: 10px;
-}
+.padding-nosotros {
+  padding: 190px; }
 
-/*Nosotros*/
-.padding-nosotros{
-    padding: 190px; 
-}
+.novedades_productos {
+  padding: 50px;
+  text-align: center; }
+  .novedades_productos h1 {
+    padding-top: 9%; }
+  .novedades_productos div {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; }
+    .novedades_productos div h5 {
+      padding: 10px; }
+    .novedades_productos div img {
+      width: 90%; }
 
-/*PIE DE PÁGINA*/
-
-.colorPieDePagina{
-    background-color: #ccd9db;
-}
-
-.logo_footer{
-    width: 26px;
-}
-
-
-
+.colorPieDePagina {
+  background-color: #ccd9db; }
+  .colorPieDePagina .logo_footer {
+    width: 26px; }

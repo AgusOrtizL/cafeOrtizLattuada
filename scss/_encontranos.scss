@@ -1,0 +1,16 @@
+.novedades_encontranos{
+    padding: 50px;
+    text-align: center;
+    h1{
+        padding-top: 9%;
+    }
+    div{
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        h4{
+            padding: $espaciado_estandar;
+        }
+    }
+}

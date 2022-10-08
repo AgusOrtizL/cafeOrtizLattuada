@@ -1,0 +1,56 @@
+.cuerpo{
+    padding-top: 30px;
+    .imgPrincipal{
+        height: 120vh; 
+        width: 100vw;
+    }
+    .imgFachada{
+        height: 75vh;
+    }
+}
+.certificados{
+    text-align: center;
+    border: 1px solid $color_secundario;
+    background-color: $color_secundario;
+    padding: $espaciado_estandar;
+    div p{
+        display: inline-block;
+        margin: $espaciado_estandar;
+        padding: $espaciado_estandar;
+    }
+    div img{
+        width: 5%;
+     }
+    .pagos{
+        text-align: center;
+    }
+}
+.logo_whatsapp{
+    width: 3%;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+.margenes{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+
+.novedades_index{
+    padding: 50px;
+    text-align: center;
+    div{
+        display: inline-block;
+        width: 25vw;
+        @include margenes_predeterminados;
+        padding: 20px;
+        h4{
+            padding: $espaciado_estandar;
+        }
+        img{
+            width: 90%;
+        }
+    }
+}

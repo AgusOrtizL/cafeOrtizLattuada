@@ -1,0 +1,16 @@
+.novedades_productos{
+    padding: 50px;
+    text-align: center;
+    h1{
+        padding-top: 9%;
+    }
+    div{
+        @include margenes_predeterminados;
+        h5{
+            padding: $espaciado_estandar;
+        }
+        img{
+            width: 90%;
+        }
+    }
+}
