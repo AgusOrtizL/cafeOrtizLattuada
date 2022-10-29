@@ -25,6 +25,34 @@
         text-align: center;
     }
 }
+
+.galeria_imagenes{
+    position:relative;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.galeria_imagenes::before{
+    content:"MÁS INFO";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:#e5dae9a6;
+    transform: scaleY(0);
+    transition: transform .4s;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    font-size:1.5rem ;
+}
+
+.galeria_imagenes:hover::before{
+       transform: scaleY(1);
+}
+
 .logo_whatsapp{
     width: 3%;
     position: fixed;

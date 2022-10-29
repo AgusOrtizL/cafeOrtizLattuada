@@ -3,6 +3,7 @@
     width: 100% ;
     background-color: $color_primario;
     opacity: 92% ;
+    z-index: 2;
     .logoPrincipal{
         width: 9%;
     }
@@ -19,8 +20,11 @@
                 color: #000;
                 margin: $espaciado_estandar;
                 padding: $espaciado_estandar;
+                transition: 200ms;
+                &:hover{
+                    color: $color_cuaternario;
+                }
             }
         }
-    }
-    
+    }   
 }

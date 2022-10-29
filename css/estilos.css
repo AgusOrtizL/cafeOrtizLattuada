@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 * {
   margin: 0px;
@@ -11,11 +12,18 @@ body {
   height: 100vh;
   overflow-x: hidden; }
 
+.padding-error-texto {
+  padding-top: 300px; }
+
+.padding-error-imagen {
+  padding-top: 150px; }
+
 .encabezado {
   position: fixed;
   width: 100%;
   background-color: #ffffff;
-  opacity: 92%; }
+  opacity: 92%;
+  z-index: 2; }
   .encabezado .logoPrincipal {
     width: 9%; }
   .encabezado .lista_navegacion {
@@ -30,7 +38,10 @@ body {
         text-decoration: none;
         color: #000;
         margin: 10px;
-        padding: 10px; }
+        padding: 10px;
+        transition: 200ms; }
+        .encabezado .lista_navegacion li a:hover {
+          color: #5d9b9b; }
 
 .cuerpo {
   padding-top: 30px; }
@@ -53,6 +64,30 @@ body {
     width: 5%; }
   .certificados .pagos {
     text-align: center; }
+
+.galeria_imagenes {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; }
+
+.galeria_imagenes::before {
+  content: "MÁS INFO";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #e5dae9a6;
+  transform: scaleY(0);
+  transition: transform .4s;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem; }
+
+.galeria_imagenes:hover::before {
+  transform: scaleY(1); }
 
 .logo_whatsapp {
   width: 3%;
